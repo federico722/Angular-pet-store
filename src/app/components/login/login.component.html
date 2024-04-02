@@ -1,0 +1,17 @@
+
+    <div class="body-form">
+        <div class="form-container">
+            <form class="styles-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <h1>Sign In</h1>
+                <input class="input-styles" type="email" formControlName ="email" placeholder="Email">
+                <input class="input-styles" type="password" formControlName="password" placeholder="Password">
+                <button class="button-styles" type="submit" [disabled]="loginForm.invalid">Login</button>
+                <div *ngIf="resultForm">Formulario completado</div>
+                <div *ngIf="false">Correo invalido</div>
+                <div *ngIf="false">Contraseña invalida</div>
+                <div *ngIf="false">Usuario no encontrado</div>
+            </form>
+        </div>
+    </div>
+
+
